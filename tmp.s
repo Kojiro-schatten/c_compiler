@@ -1,18 +1,13 @@
 .intel_syntax noprefix
 .global main
 main:
-  push 1
-  push 5
+  push 0
+  push 0
+  push 10
   pop rdi
   pop rax
-  add rax, rdi
+  sub rax, rdi
   push rax
-  push 2
-  pop rdi
-  pop rax
-  imul rax, rdi
-  push rax
-  push 3
   pop rdi
   pop rax
   sub rax, rdi
